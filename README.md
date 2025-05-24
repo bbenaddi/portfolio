@@ -33,9 +33,9 @@ The site will be available at [http://localhost:3000](http://localhost:3000) (or
 
 ## Deployment
 
-This site is deployed to GitHub Pages using GitHub Actions. The deployment is automated on every push to the main branch.
+This site is deployed as a GitHub User Site using GitHub Actions. The deployment is automated on every push to the main branch.
 
-You can visit the live site at: https://bbenaddi.github.io/portfolio/
+You can visit the live site at: https://bbenaddi.github.io
 
 ## Local Build
 
