@@ -1,7 +1,6 @@
 'use client';
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { ExperienceCounter } from "@/components/ExperienceCounter";
 
@@ -18,6 +17,14 @@ export default function Home() {
           <Mail className="w-5 h-5" />
         </a>
         <a 
+          href="https://github.com/bbenaddi" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-primary transition-colors bg-white rounded-full p-2 shadow-sm"
+        >
+          <Github className="w-5 h-5" />
+        </a>
+        <a 
           href="https://www.linkedin.com/in/bbenaddi" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -29,7 +36,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="text-center py-10">
-        <h1 className="text-4xl font-bold">Software Engineer</h1>
+        <h1 className="text-5xl font-bold mb-4">Brahim Benaddi</h1>
+        <h2 className="text-3xl font-semibold text-gray-700">Software Engineer</h2>
         <div className="flex items-center justify-center gap-2 mt-2 text-gray-600">
           <MapPin className="w-4 h-4" />
           <p>Casablanca, Morocco</p>

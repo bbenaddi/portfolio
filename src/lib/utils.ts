@@ -36,7 +36,7 @@ export function calculateExperience(startDate: Date): TimeUnits {
   };
 }
 
-export function formatExperience(experience: TimeUnits, isFixed: boolean = false): string {
+export function formatExperience(experience: TimeUnits): string {
   const parts = [];
   
   if (experience.years > 0) {
@@ -78,11 +78,14 @@ export function formatRealtimeExperience(experience: TimeUnits): string {
   timeParts.push(`${experience.seconds}s`);
   
   // Combine both parts
-  if (mainParts.length > 0) {
-    return `${mainParts.join(', ')}${timeParts.length > 0 ? ' and ' : ''}${timeParts.join(' ')}`;
+  const mainText = mainParts.join(', ');
+  const timeText = timeParts.join(' ');
+  
+  if (mainText) {
+    return `${mainText} and ${timeText}`;
   }
   
-  return timeParts.join(' ');
+  return timeText;
 }
 
 export function calculateTotalExperience(dates: { start: Date; end: Date | null }[]): TimeUnits {
